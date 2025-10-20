@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominique Farias</title>
+    <meta name="description" content="Web de Dominique Farias, estudiante">
+    <meta name="keywords" content="Programacion, curso, diseño">
+    <meta name="author" content="Dominique Farias">
+    <link rel="icon" href="" type="image/jpeg">
+    <meta property="og:title" content="Dominique Farias">
+    <meta property="og:description" content="Web de Dominique Farias, estudiante">
+    <meta property="og:image" content="Dominique Farias">
+    <meta property="og:url" content="DominiqueFarias.com">
+    <meta property="og:type" content="website">
+
+    <style>
+    @font-face {
+        font-family: "Titulo";
+        src: url("Barbarian.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Texto";
+        src: url("ubuntu.ttf") format("truetype");
+    }
+
+    body {
+        background-color: aliceblue;
+        font-family: "Texto", sans-serif;
+        margin: 0;
+    }
+
+    header,main,footer{
+        width: 700px;
+        background: white;
+        margin: auto;
+        padding: 20px;
+    }
+    nav ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: inherit;
+        color: white;
+        background: violet;
+        padding: 5px;
+        font-size: 9px;
+        text-transform: uppercase;
+        display: block;
+        width: 60px;
+        text-align: center;
+    }
+    #inicio img{
+        width: 100%;
+    }
+    .bloque{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+    .bloque img{
+        flex: 1;
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .bloque p{
+        flex: 1;
+        text-align: justify;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    #desarrollo .bloque{
+        flex-direction: row-reverse;
+    }
+    #contenedorportafolio{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+    #contenedorportafolio img{
+        width: 100%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 🔹 Fuentes para encabezados */
+    h1 {
+        font-family: "Titulo"; /* Barbarian solo en el título */
+    }
+    h2, h3 {
+        font-family: "Texto"; /* el resto usa la fuente normal */
+    }
+    </style>
+
+</head> 
+<body>
+    <header style="text-align:center; padding:40px 20px;">
+        <h1 style="color:purple; font-size:48px; margin:0;">Dominique Farias</h1>
+        <h2 style="font-size:24px; margin:10px 0 30px 0;">Estudiante</h2>
+        <nav>
+            <ul style="list-style:none; display:flex; justify-content:center; gap:15px; padding:0; margin:0;">
+                <li><a href="#inicio" style="text-decoration:none; color:white; background:violet; padding:8px 15px; font-size:12px; text-transform:uppercase; display:block; border-radius:5px;">Inicio</a></li>
+                <li><a href="#sobre-mi" style="text-decoration:none; color:white; background:violet; padding:8px 15px; font-size:12px; text-transform:uppercase; display:block; border-radius:5px;">Sobre mí</a></li>
+                <li><a href="#desarrollo" style="text-decoration:none; color:white; background:violet; padding:8px 15px; font-size:12px; text-transform:uppercase; display:block; border-radius:5px;">Desarrollo</a></li>
+                <li><a href="#portafolio" style="text-decoration:none; color:white; background:violet; padding:8px 15px; font-size:12px; text-transform:uppercase; display:block; border-radius:5px;">Portafolio</a></li>
+                <li><a href="#contacto" style="text-decoration:none; color:white; background:violet; padding:8px 15px; font-size:12px; text-transform:uppercase; display:block; border-radius:5px;">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section id="inicio">
+            <h3>Inicio</h3>
+            <div class="bloque">
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
+                </p>
+            </div>
+        </section>
+
+        <section id="sobre-mi">
+            <h3>Sobre mí</h3>
+            <p>¡Hola! Soy Dominique Farias, estudiante apasionada por aprender y mejorar cada día.</p>
+        </section>
+
+        <section id="desarrollo">
+            <h3>Desarrollo</h3>
+            <div class="bloque">
+                <img src="P1-regional-iStock-1985150440.jpg" alt="Dominique Farias">
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
+                </p>
+            </div>
+        </section>
+
+        <section id="portafolio">
+            <h3>Portafolio</h3>
+            <div id="contenedorportafolio">
+                <article>
+                    <h4>Elemento de portafolio</h4>
+                    <p>Descripción del elemento</p>
+                    <img src="snopy.jpg" alt="Domasablog">
+                </article>
+                <article>
+                    <h4>Elemento de portafolio</h4>
+                    <p>Descripción del elemento</p>
+                    <img src="snopy.jpg" alt="Domasablog">
+                </article>
+                <article>
+                    <h4>Elemento de portafolio</h4>
+                    <p>Descripción del elemento</p>
+                    <img src="snopy.jpg" alt="Domasablog">
+                </article>
+                <article>
+                    <h4>Elemento de portafolio</h4>
+                    <p>Descripción del elemento</p>
+                    <img src="snopy.jpg" alt="Domasablog">
+                </article>
+                <article>
+                    <h4>Elemento de portafolio</h4>
+                    <p>Descripción del elemento</p>
+                    <img src="snopy.jpg" alt="Domasablog">
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14735.670262259358!2d-0.40323199603271487!3d39.50057030899277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2ses!4v1759912095849!5m2!1ses-419!2ses" 
+                    width="600" 
+                    height="450" 
+                    style="border:0; flex:1; min-width:300px;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+        
+                <form style="flex:1; min-width:300px; display:flex; flex-direction:column; gap:10px;">
+                    <label for="nombre">Introduce tu nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+        
+                    <label for="email">Introduce tu email:</label>
+                    <input type="email" id="email" name="email">
+        
+                    <label for="mensaje">Introduce tu mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <a href="https://instagram.com/leodan" target="_blank">Instagram</a>
+        <a href="https://github.com/jocarsa" target="_blank">Github</a>
+    </footer>
+</body>
+</html>
